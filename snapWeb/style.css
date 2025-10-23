@@ -182,3 +182,18 @@ button {
     white-space: nowrap;
     font-weight: 300;
 }
+/*
+* Hero Section
+*/
+
+.hero-section {
+    display: flex;
+    margin-top: 5.5rem;
+}
+
+.hero-section__intro {
+    background-color: #21aa58;
+    color: white;
+    width: 100%;
+    padding: 1rem 1rem 1.5rem;
+}
