@@ -349,3 +349,8 @@ button {
     justify-content: space-around;
     padding: 0 2rem;
 }
+@media (min-width: 992px) {
+    .snapp-apps-links-section {
+        display: block;
+    }
+}
