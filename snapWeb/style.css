@@ -332,3 +332,20 @@ button {
         display: none;
     }
 }
+/**
+*  Snapp Apps Links
+*/
+
+.snapp-apps-links-section {
+    display: none;
+}
+
+.snapp-apps-links {
+    min-height: 30vh;
+    content-visibility: auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 2rem;
+}
