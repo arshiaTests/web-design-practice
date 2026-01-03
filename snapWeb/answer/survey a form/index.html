@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Playing Cards – Flexbox Solution</title>
+
+  <style>
+    /* کانتینر اصلی کارت‌ها */
+    #playing-cards {
+      display: flex;              /* فلکس کانتینر */
+      justify-content: center;    /* وسط‌چین افقی */
+      flex-wrap: wrap;            /* اجازه wrap شدن کارت‌ها */
+      gap: 20px;                  /* فاصله بین کارت‌ها */
+      padding: 40px;
+    }
+
+    /* استایل کارت‌ها */
+    .card {
+      width: 150px;               /* عرض کارت */
+      height: 220px;              /* ارتفاع کارت */
+      border: 2px solid #333;
+      border-radius: 10px;
+      padding: 10px;
+      background-color: #fff;
+
+      display: flex;              /* فلکس برای left/middle/right */
+      justify-content: space-between;
+    }
+
+    /* بخش چپ کارت */
+    .left {
+      align-self: flex-start;     /* قرارگیری در ابتدای کارت */
+      font-size: 20px;
+    }
+
+    /* بخش وسط کارت */
+    .middle {
+      align-self: center;         /* وسط کارت */
+      display: flex;              /* فلکس داخلی */
+      flex-direction: column;     /* چیدمان عمودی */
+      align-items: center;
+      font-size: 30px;
+    }
+
+    /* بخش راست کارت */
+    .right {
+      align-self: flex-end;       /* انتهای کارت */
+      font-size: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- کانتینر اصلی کارت‌ها -->
+  <main id="playing-cards">
+
+    <!-- کارت اول -->
+    <div class="card">
+      <div class="left">A ♠</div>
+      <div class="middle">
+        <div>♠</div>
+        <div>♠</div>
+      </div>
+      <div class="right">A ♠</div>
+    </div>
+
+    <!-- کارت دوم -->
+    <div class="card">
+      <div class="left">K ♥</div>
+      <div class="middle">
+        <div>♥</div>
+        <div>♥</div>
+      </div>
+      <div class="right">K ♥</div>
+    </div>
+
+    <!-- کارت سوم -->
+    <div class="card">
+      <div class="left">Q ♦</div>
+      <div class="middle">
+        <div>♦</div>
+        <div>♦</div>
+      </div>
+      <div class="right">Q ♦</div>
+    </div>
+
+  </main>
+
+</body>
+</html>
