@@ -354,3 +354,120 @@ button {
         display: block;
     }
 }
+/**
+*  Intro Of Snapp Apps
+*/
+
+.intro-of-snapp-apps {
+    background-color: var(--background-primary);
+    color: #333;
+    padding-bottom: 3rem;
+}
+.intro-of-snapp-apps_items {
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 1rem;
+    margin: 1rem 0.5rem;
+}
+.intro-of-snapp-apps_items > a {
+    text-decoration: none;
+    color: inherit;
+}
+.intro-of-snapp-apps_title {
+    padding: 2.5rem 0;
+    font-size: var(--text-md);
+    font-weight: 700;
+    line-height: 3.25rem;
+    text-align: center;
+}
+.intro-of-snapp-apps_item {
+    background-color: white;
+    border-radius: 1.125rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+}
+.intro-of-snapp-apps_item_info {
+    margin-right: 0.5rem;
+    padding: 1.125rem 0;
+}
+.intro-of-snapp-apps_item_info h3 {
+    margin-bottom: .5rem;
+    font-weight: bold;
+    text-align: center;
+    font-size: var(--text-sm);
+    line-height: 1.5;
+}
+.intro-of-snapp-apps_item_info p {
+    font-size: var(--text-sm);
+    color: rgba(0,0,0,.6);
+    display: none;
+}
+.snapp-for-all-need {
+    display: flex;
+    position: relative;
+    min-height: 700px;
+}
+/**
+* Snapp Slider
+*/
+
+.snapp-slider-section {
+    margin: 5rem 0;
+}
+
+.snapp-slider-wrapper {
+    padding: 0 7rem;
+    border-radius: 2rem;
+    overflow: hidden;
+    position: relative;
+}
+
+#snapp_slider {
+    border-radius: 1rem;
+}
+
+#snapp_slider .keen-slider__slide {
+    height: 25rem;
+    width: 100%;
+}
+
+#snapp_slider .keen-slider__slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.keen-dots-wrapper {
+    position: absolute;
+    z-index: 100;
+    bottom : 1rem;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    direction: ltr;
+}
+
+.keen-dots-wrapper .keen-dots {
+    background-color: rgba(255,255,255,.15);
+    display: flex;
+    padding: 0.3rem;
+    border-radius: .5rem;
+}
+
+.keen-dots-wrapper .keen-dots .dot {
+    padding: .3rem;
+    border: none;
+    outline: none;
+    margin: 0 .2rem;
+    border-radius: 50%;
+    background-color: rgba(255,255,255, .3);
+    cursor: pointer;
+}
+
+.keen-dots-wrapper .keen-dots .dot.active {
+    background-color: white;
+}

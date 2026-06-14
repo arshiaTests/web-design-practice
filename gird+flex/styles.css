@@ -1,0 +1,107 @@
+html {
+    font-size: 100%;
+}
+
+body {
+    padding: 2rem;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: repeat(12 , 1fr);
+    gap : 1rem;
+}
+
+.header {
+    background-color: #2980b9;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    grid-column: span 12;
+}
+
+.header .brand-name {
+    font-weight: bold;
+    font-size: 2rem;
+    margin-left: 1rem;
+    color: white;
+}
+
+.header .navbar a {
+    text-decoration: none;
+    color : white;
+    margin-right: 1rem;
+}
+
+.sidebar {
+    background-color: #2980b9;
+    flex-basis: 33.33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    grid-column: 9/13;
+}
+
+.content {
+    background-color: #2980b9;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    flex-basis: 66.66%;
+    grid-column: 1/9;
+}
+
+.content .course-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(20rem , 1fr));
+    gap: .5rem;
+}
+
+.content .course-list .box {
+    background-color: #8e44ad;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: calc(33.33% - .5rem);
+    height: 5rem;
+    border-radius: 0.5rem;
+}
+
+
+.intro-box {
+    background-color: #2980b9;
+    padding: 2rem;
+    border-radius: .5rem;
+    font-weight: bold;
+    color: white;
+    grid-column: 1/4;
+}
+
+.about-section {
+    background-color: #2980b9;
+    border-radius: .5rem;
+    padding: 1rem;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: 4/13;
+}
+
+.footer {
+    background-color: #2980b9;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    grid-column: span 12;
+}
