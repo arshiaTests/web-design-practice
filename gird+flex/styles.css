@@ -61,48 +61,4 @@ body {
     gap: .5rem;
 }
 
-.content .course-list .box {
-    background-color: #8e44ad;
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-basis: calc(33.33% - .5rem);
-    height: 5rem;
-    border-radius: 0.5rem;
-}
 
-
-.intro-box {
-    background-color: #2980b9;
-    padding: 2rem;
-    border-radius: .5rem;
-    font-weight: bold;
-    color: white;
-    grid-column: 1/4;
-}
-
-.about-section {
-    background-color: #2980b9;
-    border-radius: .5rem;
-    padding: 1rem;
-    font-weight: bold;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    grid-column: 4/13;
-}
-
-.footer {
-    background-color: #2980b9;
-    padding: 1rem;
-    border-radius: 0.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-weight: bold;
-    grid-column: span 12;
-}
-/* git test */
