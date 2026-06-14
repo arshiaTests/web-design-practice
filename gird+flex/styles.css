@@ -78,3 +78,14 @@ body {
     color: white;
     grid-column: 1/4;
 }
+.about-section {
+    background-color: #2980b9;
+    border-radius: .5rem;
+    padding: 1rem;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: 4/13;
+}
