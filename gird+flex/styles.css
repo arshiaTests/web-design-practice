@@ -60,5 +60,14 @@ body {
     grid-template-columns: repeat(auto-fit , minmax(20rem , 1fr));
     gap: .5rem;
 }
-
+.content .course-list .box {
+    background-color: #8e44ad;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: calc(33.33% - .5rem);
+    height: 5rem;
+    border-radius: 0.5rem;
+}
 
