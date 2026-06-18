@@ -77,7 +77,9 @@ button {
   border: none;
   border-radius: 8px;
   background-color: royalblue;
- 
+  color: white;
+
+}
 button:hover {
     opacity: 0.9;
 }
