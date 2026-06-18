@@ -76,8 +76,8 @@ button {
   padding: 1rem;
   border: none;
   border-radius: 8px;
+  background-color: royalblue;
  
-}
 button:hover {
     opacity: 0.9;
 }
