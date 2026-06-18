@@ -79,7 +79,7 @@ button {
   background-color: royalblue;
   color: white;
   font-size: 1rem;
-
+  cursor: pointer;
 }
 button:hover {
     opacity: 0.9;
