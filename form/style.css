@@ -1,0 +1,73 @@
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+  }
+
+  /**عنوان وسط صفحه قرار می‌گیره **/
+  header {
+      text-align: center;
+      padding: 2rem;
+  }
+
+  header h1 {
+      margin-bottom: 0.5rem;
+  }
+
+  header p {
+      color: #666;
+  }
+
+  form {
+      max-width: 700px;
+      margin: 0 auto;
+  }
+
+  fieldset {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      background-color: white;
+  }
+
+  legend {
+      font-weight: bold;
+      padding: 0 0.5rem;
+  }
+
+  label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  select,
+  textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+  }
+
+  input:focus,
+  select:focus,
+  textarea:focus {
+      outline: none;
+      border-color: royalblue;
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+      margin-right: 0.5rem;
+  }
