@@ -52,5 +52,6 @@ video {
 }
 
 section:hover {
-    
+    transform: translateY(-3px);
+    transition: 0.3s ease;
 }
