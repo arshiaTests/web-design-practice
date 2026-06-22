@@ -54,24 +54,5 @@ h1, h2 {
   width: 75%;
 }
 
-.price {
-  text-align: right;
-  width: 25%
-}
-
-/* FOOTER */
-
-footer {
-  font-size: 14px;
-}
-
-address {
-  font-style: normal;
-}
-
-a {
-  color: black;
-}
-
 
 
