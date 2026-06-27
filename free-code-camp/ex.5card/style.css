@@ -57,3 +57,11 @@ h1::after {
   background-color: midnightblue;
 }
 
+.card-links a:focus {
+  outline: 2px solid yellow;
+}
+
+.card-links a:visited {
+  color: crimson;
+}
+
