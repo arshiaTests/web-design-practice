@@ -70,7 +70,7 @@ section {
     max-width: 600px;
      background-color: whitesmoke;
   padding: 20px;
- 
+  border-radius: 10px;
 }
 section:hover{
   transform: skewX(10deg);
