@@ -69,7 +69,8 @@ section {
     margin: 20px auto;
     max-width: 600px;
      background-color: whitesmoke;
-  
+  padding: 20px;
+ 
 }
 section:hover{
   transform: skewX(10deg);
