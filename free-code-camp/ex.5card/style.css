@@ -67,8 +67,9 @@ h1::after {
 
 section {
     margin: 20px auto;
-      max-width: 600px;
- 
+    max-width: 600px;
+     background-color: whitesmoke;
+  
 }
 section:hover{
   transform: skewX(10deg);
