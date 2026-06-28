@@ -66,6 +66,7 @@ h1::after {
 }
 
 section {
+    margin: 20px auto;
 
 }
 section:hover{
