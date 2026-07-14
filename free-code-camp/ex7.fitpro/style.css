@@ -1,0 +1,213 @@
+/* ====================== ۱. RESET & BASE ====================== */
+* {
+    box-sizing: border-box;        /* بدون این، padding و border به عرض اضافه می‌شه */
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary: #2563eb;
+    --dark: #111827;
+    --light: #f3f4f6;
+    --accent: #9333ea;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--light);
+    color: var(--dark);
+    line-height: 1.6;           /* بدون این، خطوط خیلی به هم چسبیده می‌شن */
+}
+
+/* ====================== ۲. NAVBAR - Flexbox ====================== */
+.navbar {
+    display: flex;                    /* بدون flex، المان‌ها زیر هم می‌افتن */
+    justify-content: space-between;   /* فاصله بین المان‌ها */
+    align-items: center;              /* وسط‌چین عمودی */
+    padding: 20px 5%;
+    background: var(--dark);
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 30px;                        /* فاصله بین آیتم‌ها */
+    list-style: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 12px;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #60a5fa;
+}
+
+/* ====================== ۳. HERO ====================== */
+.hero {
+    min-height: 80vh;                 /* حداقل ارتفاع صفحه */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    color: white;
+    gap: 40px;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-content button {
+    padding: 16px 32px;
+    font-size: 1.2rem;
+    background: white;
+    color: var(--dark);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.hero-content button:hover {
+    transform: scale(1.08) translateY(-5px);
+}
+
+/* ====================== ۴. GRID + CARDS ====================== */
+section {
+    padding: 80px 10%;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+    color: var(--dark);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* ریسپانسیو */
+    gap: 30px;
+}
+
+.card, .box {
+    background: white;
+    padding: 35px 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover, .box:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.box::before {
+    content: "★";
+    display: block;
+    color: gold;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+/* ====================== ۵. FORM - استایل پیشرفته ====================== */
+#contact {
+    background: #f8fafc;
+    max-width: 700px;
+    margin: 0 auto;
+    border-radius: 25px;
+}
+
+form {
+    padding: 50px;
+    background: white;
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+legend {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    margin: 20px 0 8px;
+    font-weight: 600;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 16px 20px;
+    border: 2px solid #e5e7eb;
+    border-radius: 12px;
+    font-size: 1.05rem;
+    transition: all 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15);
+    outline: none;
+}
+
+form button {
+    margin-top: 30px;
+    width: 100%;
+    padding: 18px;
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ====================== ۶. FOOTER ====================== */
+footer {
+    background: #111827;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* ====================== ۷. ANIMATION ====================== */
+.hero svg {
+    animation: rotate 8s linear infinite;
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+}
+
+/* ====================== ۸. RESPONSIVE ====================== */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 100px 5% 80px;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.8rem;
+    }
+}

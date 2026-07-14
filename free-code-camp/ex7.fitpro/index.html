@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitPro - مربی فیتنس حرفه‌ای</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">FitPro</div>
+        <ul>
+            <li><a href="#">خانه</a></li>
+            <li><a href="#">برنامه‌ها</a></li>
+            <li><a href="#">تمرینات</a></li>
+            <li><a href="#contact">تماس</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>بدنت رو تغییر بده</h1>
+            <p>با بهترین برنامه‌های تمرینی و مربیگری شخصی</p>
+            <button onclick="alert('ثبت‌نام انجام شد!')">شروع رایگان</button>
+        </div>
+        <svg width="300" height="300" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="40" fill="none" stroke="white" stroke-width="8"/>
+            <circle cx="50" cy="50" r="25" fill="white"/>
+        </svg>
+    </section>
+
+    <!-- Services -->
+    <section id="services">
+        <h2>خدمات ما</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>برنامه تمرینی</h3>
+                <p>برنامه‌های شخصی‌سازی شده برای همه سطوح</p>
+            </div>
+            <div class="card">
+                <h3>تغذیه</h3>
+                <p>رژیم غذایی هوشمند و اصولی</p>
+            </div>
+            <div class="card box">
+                <h3>مربیگری آنلاین</h3>
+                <p>همین حالا با مربی در ارتباط باش</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact">
+        <h2>با ما در ارتباط باش</h2>
+        <form>
+            <fieldset>
+                <legend>فرم ثبت‌نام</legend>
+                
+                <label>نام و نام خانوادگی</label>
+                <input type="text" placeholder="مثال: علی رضایی" required>
+
+                <label>شماره تماس</label>
+                <input type="tel" placeholder="۰۹۱۲۳۴۵۶۷۸۹" required>
+
+                <label>پیام شما</label>
+                <textarea placeholder="توضیحات..." required></textarea>
+
+                <button type="submit">ارسال پیام</button>
+            </fieldset>
+        </form>
+    </section>
+
+    <footer>
+        <p>© ۱۴۰۵ FitPro - همه حقوق محفوظ است</p>
+    </footer>
+
+</body>
+</html>

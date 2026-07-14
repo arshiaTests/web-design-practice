@@ -1,0 +1,367 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Inter', system-ui, sans-serif;
+     color:#4c4d5f;
+}
+
+
+
+
+
+
+a{
+
+    text-decoration:none;
+    color:inherit;
+
+}
+
+
+ul{
+
+    list-style:none;
+
+}
+
+
+
+/* CONTAINER */
+.container{
+    width:90%;
+    max-width:1140px;
+    margin:auto;
+}
+
+
+/* HEADER */
+/* HEADER */
+header{
+    height:90px;
+    display:flex;
+    align-items:center;
+    background: white;
+    border-bottom: 1px solid #eee;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width: 100%;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:700;
+    color:#00b289;
+}
+
+.menu{
+    display:flex;
+    gap:35px;
+}
+
+.menu a{
+    font-size:15px;
+    font-weight:500;
+}
+
+/* Dropdown */
+.dropdown{
+    position:relative;
+}
+.dropdown-menu{
+    position:absolute;
+    top:30px;
+    left:0;
+    width:180px;
+    background:white;
+    padding:15px;
+    box-shadow:0 10px 25px #ddd;
+    display:none;
+    border-radius: 6px;
+}
+.dropdown:hover .dropdown-menu{
+    display:block;
+}
+.dropdown-menu li{
+    padding:10px 0;
+}
+
+/* Actions - این بخش مهم‌ترین قسمت است */
+.actions{
+    display:flex;
+    align-items:center;
+    gap: 25px;
+}
+
+.actions a {                    /* همه لینک‌های داخل actions */
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.actions a:first-child {        /* Log In */
+    color: #4c4d5f;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 10px 0;
+}
+
+.btn{
+    padding: 11px 33px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    background: #00b289;
+    font-weight: 600;
+    font-size: 15px;
+    white-space: nowrap;
+    min-width: fit-content;
+    display: inline-flex;
+    margin-top:35px;
+
+
+}
+
+.btn:hover {
+    background: #009f78;
+}
+
+/* HERO */
+
+
+.hero{
+
+    padding:100px 0 70px;
+    background: #f8f9fa;
+
+}
+
+.hero-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+.hero-title h1{
+    line-height: 1.1;
+    font-size:48px;
+
+    font-weight:600;
+
+}
+
+
+
+
+
+/* BILLING */
+
+
+.billing{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    font-size:18px;
+
+}
+/* 
+
+
+
+ /* SWITCH */
+
+
+
+  
+.switch{
+
+    position:relative;
+    width:55px;
+    height:28px;
+
+}
+
+
+.switch input{
+
+    display:none;
+
+}
+
+
+
+.slider{
+
+    position:absolute;
+
+    inset:0;
+
+    background:#00b289;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+
+.slider::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:22px;
+
+    height:22px;
+
+    top:3px;
+
+    left:3px;
+
+    background:white;
+
+    border-radius:50%;
+
+    transition:.3s;
+
+}
+
+
+
+/* وقتی روشن شد */
+
+.switch input:checked + .slider{
+
+    background:#585ff3;
+
+}
+
+
+
+.switch input:checked + .slider::before{
+
+    transform:translateX(27px);
+
+}
+/* PRICING SECTION */
+.pricing {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.pricing-card {
+    background: white;
+    border-radius: 12px;
+    padding: 40px 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s;
+    position: relative;
+    border: 1px solid #eee;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.pricing-card.popular {
+    border: 2px solid #00b289;
+    transform: scale(1.05);
+}
+
+.popular-badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #00b289;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 4px 20px;
+    border-radius: 20px;
+}
+
+/* Price Styling */
+.price {
+    margin: 25px 0;
+    font-size: 42px;
+    font-weight: 700;
+    color: #4c4d5f;
+}
+
+.currency {
+    font-size: 24px;
+    vertical-align: super;
+}
+
+.period {
+    font-size: 18px;
+    font-weight: 400;
+    color: #777;
+}
+
+.description {
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 14px 0;
+    border-radius: 6px;
+    font-weight: 600;
+    margin-bottom: 35px;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid #00b289;
+    color: #00b289;
+}
+
+.btn:hover {
+    background: #00b289;
+    color: white;
+}
+
+/* Features */
+.features {
+    list-style: none;
+}
+
+.features li {
+    padding: 12px 0;
+    border-bottom: 1px solid #f0f0f0;
+    color: #555;
+}
