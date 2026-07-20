@@ -1,0 +1,89 @@
+/* Header */
+
+.header {
+    display: flex;
+    justify-content: center;
+    padding: 28px 0;
+}
+
+/* Navbar */
+
+.navbar {
+    position: fixed;
+    top: 28px;
+
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    padding: 6px;
+
+    background: #ece9e8;
+    border-radius: 50px;
+
+    z-index: 1000;
+}
+
+/* Links */
+
+.navbar a {
+    color: #444;
+    text-decoration: none;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    padding: 13px 22px;
+
+    border-radius: 50px;
+
+    transition: .3s;
+}
+
+/* Active */
+
+.navbar .active {
+    background: #fff;
+    color: #111;
+}
+
+/* Hover */
+
+.navbar a:hover {
+    background: #fff;
+}
+
+.hero {
+    margin-top: 180px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 76px;
+    font-weight: 500;
+    line-height: 1.05;
+    letter-spacing: -4px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hero-tags {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 45px;
+}
+.hero-tags span{
+    font-size: 18px;
+    color: #444;
+}
+.hero-tags a {
+    background:#f3f3f3;
+    color:#444;
+    padding:10px 18px;
+    border-radius:30px;
+    font-size:16px;
+    transition:.3s;
+    text-decoration: none;
+}

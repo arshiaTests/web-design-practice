@@ -1,6 +1,6 @@
 /* ====================== ۱. RESET & BASE ====================== */
 * {
-    box-sizing: border-box;        /* بدون این، padding و border به عرض اضافه می‌شه */
+    box-sizing: border-box;      
     margin: 0;
     padding: 0;
 }
@@ -16,14 +16,13 @@ body {
     font-family: Arial, sans-serif;
     background: var(--light);
     color: var(--dark);
-    line-height: 1.6;           /* بدون این، خطوط خیلی به هم چسبیده می‌شن */
+    line-height: 1.6;           
 }
 
-/* ====================== ۲. NAVBAR - Flexbox ====================== */
 .navbar {
-    display: flex;                    /* بدون flex، المان‌ها زیر هم می‌افتن */
-    justify-content: space-between;   /* فاصله بین المان‌ها */
-    align-items: center;              /* وسط‌چین عمودی */
+    display: flex;                    
+    justify-content: space-between;   
+    align-items: center;             
     padding: 20px 5%;
     background: var(--dark);
     color: white;
@@ -34,7 +33,7 @@ body {
 
 .navbar ul {
     display: flex;
-    gap: 30px;                        /* فاصله بین آیتم‌ها */
+    gap: 30px;                     
     list-style: none;
 }
 
@@ -49,9 +48,9 @@ body {
     color: #60a5fa;
 }
 
-/* ====================== ۳. HERO ====================== */
+
 .hero {
-    min-height: 80vh;                 /* حداقل ارتفاع صفحه */
+    min-height: 80vh;                 
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -81,7 +80,7 @@ body {
     transform: scale(1.08) translateY(-5px);
 }
 
-/* ====================== ۴. GRID + CARDS ====================== */
+
 section {
     padding: 80px 10%;
 }
@@ -95,7 +94,7 @@ h2 {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* ریسپانسیو */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
     gap: 30px;
 }
 
@@ -120,7 +119,7 @@ h2 {
     margin-bottom: 15px;
 }
 
-/* ====================== ۵. FORM - استایل پیشرفته ====================== */
+
 #contact {
     background: #f8fafc;
     max-width: 700px;
@@ -176,7 +175,6 @@ form button {
     cursor: pointer;
 }
 
-/* ====================== ۶. FOOTER ====================== */
 footer {
     background: #111827;
     color: white;
@@ -184,7 +182,7 @@ footer {
     padding: 40px 20px;
 }
 
-/* ====================== ۷. ANIMATION ====================== */
+
 .hero svg {
     animation: rotate 8s linear infinite;
 }
@@ -194,7 +192,7 @@ footer {
     to   { transform: rotate(360deg); }
 }
 
-/* ====================== ۸. RESPONSIVE ====================== */
+
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
