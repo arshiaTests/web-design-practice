@@ -90,3 +90,36 @@
     transition:.3s;
     text-decoration: none;
 }
+.projects{
+    padding: 100px 0;
+}
+.projects-grid{
+    width:min(92%,1400px);
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 32px;
+}
+.project{
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    cursor:pointer;
+
+}
+.project img{
+
+    width:100%;
+
+    display:block;
+
+    transition:.4s ease;
+
+}
+.project:hover img{
+
+    transform:scale(1.03);
+
+}
